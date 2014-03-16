@@ -4,13 +4,15 @@ public class QuickSort implements Isort {
 	int[] data;
 	
 	@Override
-	public void sort(int[] data) {
+	public int[] sort(int[] data) {
 		
 		this.data = data;
 		// pivot 을 data의 마지막 값으로 한다.
 		int pivotPosition = data.length - 1;
 
 		quickSort(0, pivotPosition);
+		
+		return this.data;
 	}
 	
 	private void quickSort(int startPosition, int pivotPosition)

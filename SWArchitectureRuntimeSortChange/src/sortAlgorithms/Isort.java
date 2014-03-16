@@ -1,5 +1,5 @@
 package sortAlgorithms;
 
 public interface Isort {
-	public void sort( int[] data );
+	public int[] sort( int[] data );
 }

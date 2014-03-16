@@ -3,7 +3,7 @@ package sortAlgorithms;
 public class BubbleSort implements Isort {
 
 	@Override
-	public void sort(int[] data) {
+	public int[] sort(int[] data) {
 		// 데이터 길이만큼 loop
 		for(int i=1 ; i<data.length ; i++) {
 			// 끝에서부터 채워지므로 카운트다운을 역으로 한다.
@@ -18,5 +18,6 @@ public class BubbleSort implements Isort {
 				}
 			}
 		}
+		return data;
 	}
 }
